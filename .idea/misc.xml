@@ -11,14 +11,18 @@
         <entry key="..\:/LoginAcessApp/app/src/main/res/layout/activity_main.xml" value="0.23716632443531827" />
         <entry key="..\:/LoginAcessApp/app/src/main/res/layout/activity_reception.xml" value="0.22826086956521738" />
         <entry key="..\:/LoginAcessApp/app/src/main/res/layout/activity_user.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/activity_add_team.xml" value="0.25" />
-        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/activity_add_user.xml" value="0.25" />
-        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/activity_admin.xml" value="0.19610507246376813" />
-        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/drawable/btn_scan.xml" value="0.188" />
+        <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_acceuil.xml" value="0.1796875" />
+        <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_autonome.xml" value="0.1796875" />
+        <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_homologation.xml" value="0.1796875" />
+        <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_junior.xml" value="0.1796875" />
+        <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_suiveur.xml" value="0.1796875" />
+        <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/item_of_list.xml" value="0.1796875" />
+        <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/tee.xml" value="0.1796875" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
