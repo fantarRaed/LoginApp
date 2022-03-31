@@ -30,7 +30,7 @@ public class InputActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dbref1 = FirebaseDatabase.getInstance().getReference("teams").child(data).child("score");
+                dbref1 = FirebaseDatabase.getInstance().getReference("teams").child(data).child("score_homologation");
                 dbref1.setValue(Integer.parseInt(((TextView)findViewById(R.id.score)).getText().toString()));
                 startActivity(new Intent(InputActivity.this, AcceuilActivity.class));
             }
