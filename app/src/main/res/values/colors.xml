@@ -11,4 +11,11 @@
     <color name="g">#1D1C18</color>
     <color name="y">#E2AC0D</color>
     <color name="gf">#E1DBBD</color>
+    //homologation
+    <color name="darkYellow">#E2AC0D</color>
+    <color name="j">#72ADFFEF</color>
+    <color name="s">#74FFCAA3</color>
+    <color name="a">#6B90FF76</color>
+    <color name="t">#6BA39154</color>
+    //============
 </resources>
