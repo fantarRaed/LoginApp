@@ -11,10 +11,24 @@
         <entry key="..\:/LoginAcessApp/app/src/main/res/layout/activity_main.xml" value="0.23716632443531827" />
         <entry key="..\:/LoginAcessApp/app/src/main/res/layout/activity_reception.xml" value="0.22826086956521738" />
         <entry key="..\:/LoginAcessApp/app/src/main/res/layout/activity_user.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/drawable/button_login.xml" value="0.1" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/drawable/circle.xml" value="0.1" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/drawable/corner.xml" value="0.1355" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/drawable/input_text.xml" value="0.1355" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/drawable/item.xml" value="0.1355" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/drawable/item2.xml" value="0.1355" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/drawable/item3.xml" value="0.1355" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/drawable/loginbac.xml" value="0.1355" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/drawable/pau.xml" value="0.1355" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/drawable/selector.xml" value="0.1" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
