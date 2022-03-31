@@ -9,7 +9,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.loginacessapp.JuryActivity;
+import com.example.loginacessapp.QRScanner;
 import com.example.loginacessapp.R;
+import com.example.loginacessapp.ReceptionActivity;
 
 public class JuniorActivity extends AppCompatActivity {
 /*
@@ -28,7 +30,7 @@ public class JuniorActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(JuniorActivity.this, InputActivity.class));
+                startActivity(new Intent(JuniorActivity.this, QRScanner.class));
             }
         });
 
