@@ -9,19 +9,29 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.loginacessapp.QRScanner;
 import com.example.loginacessapp.R;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class InputActivity extends AppCompatActivity {
+
+    DatabaseReference dbref1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input);
 
+        Intent intent = getIntent();
+        String data = intent.getStringExtra(QRScanner.DATA);
+
         TextView btn = findViewById(R.id.btnscore);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                dbref1 = FirebaseDatabase.getInstance().getReference("teams").child(data).child("score");
+                dbref1.setValue(Integer.parseInt(((TextView)findViewById(R.id.score)).getText().toString()));
                 startActivity(new Intent(InputActivity.this, AcceuilActivity.class));
             }
         });

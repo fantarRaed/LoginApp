@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.loginacessapp.QRScanner;
 import com.example.loginacessapp.R;
 
 public class AutonomeActivity extends AppCompatActivity {
@@ -28,7 +29,7 @@ public class AutonomeActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AutonomeActivity.this, InputActivity.class));
+                startActivity(new Intent(AutonomeActivity.this, QRScanner.class));
             }
         });
 
