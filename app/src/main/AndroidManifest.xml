@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginAcessApp">
         <activity
+            android:name=".addTeam"
+            android:exported="false" />
+        <activity
+            android:name=".addUser"
+            android:exported="false" />
+        <activity
             android:name=".JuryActivity"
             android:exported="false" />
         <activity
