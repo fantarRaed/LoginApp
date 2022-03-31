@@ -33,6 +33,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".homologation.JuniorActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".homologation.AcceuilActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".homologation.AutonomeActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".homologation.InputActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".homologation.SuiveurActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".homologation.ToutTerrainActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

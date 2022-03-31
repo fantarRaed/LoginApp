@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    //homologation
+    <color name="darkYellow">#E2AC0D</color>
+    <color name="j">#72ADFFEF</color>
+    <color name="s">#74FFCAA3</color>
+    <color name="a">#6B90FF76</color>
+    <color name="t">#6BA39154</color>
+    //============
 </resources>
