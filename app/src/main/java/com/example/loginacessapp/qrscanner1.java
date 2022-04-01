@@ -76,7 +76,6 @@ public class qrscanner1 extends AppCompatActivity implements ZXingScannerView.Re
         Intent intent = new Intent(this,juryActivity.class);
         intent.putExtra(DATA,data);
         startActivity(intent);
-        startActivity(new Intent(getApplicationContext(),juryActivity.class));
 
 
         //DatabaseReference childref = dbref.child(data);

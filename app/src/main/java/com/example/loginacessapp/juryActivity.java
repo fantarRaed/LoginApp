@@ -1,5 +1,6 @@
 package com.example.loginacessapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -32,8 +33,16 @@ public class juryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.jury);
+
+        Intent intent = getIntent();
+        String data = intent.getStringExtra(qrscanner1.DATA);
+
+
         team_id=findViewById(R.id.team_id);
         team_name=findViewById(R.id.team_name);
+
+        System.out.println("old data is "+data);
+        team_id.setText(data);
 
         cb1 = findViewById(R.id.checkBox1);
         cb2 = findViewById(R.id.checkBox2);
@@ -54,6 +63,8 @@ public class juryActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
+
+                String id = team_id.getText().toString();
                 int score_jury=0;
                 if (cb1.isChecked()) {
                     score_jury += score_task1;
@@ -77,7 +88,10 @@ public class juryActivity extends AppCompatActivity {
                     score_jury +=score_task7;
                 }
 
-                teamsRef.child(team_id.toString()).setValue(score_jury).addOnSuccessListener(suc-> // set to add or update
+                System.out.println("score jury ="+score_jury);
+                System.out.println("team id ="+team_id.getText().toString());
+
+                teamsRef.child(id).child("score_jury").setValue(score_jury).addOnSuccessListener(suc-> // set to add or update
                     {
                         Toast.makeText(juryActivity.this, "score_jury added successfully", Toast.LENGTH_SHORT).show();
                     }).addOnFailureListener(er-> {
