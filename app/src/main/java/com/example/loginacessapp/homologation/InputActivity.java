@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class InputActivity extends AppCompatActivity {
 
-    DatabaseReference dbref1;
+    DatabaseReference db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +31,8 @@ public class InputActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dbref1 = FirebaseDatabase.getInstance().getReference("teams").child(data).child("score_homologation");
-                dbref1.setValue(Integer.parseInt(((TextView)findViewById(R.id.score)).getText().toString()));
+                db = FirebaseDatabase.getInstance().getReference("teams").child(data).child("score_homologation");
+                db.setValue(Integer.parseInt(((TextView)findViewById(R.id.score)).getText().toString()));
                 startActivity(new Intent(InputActivity.this, AcceuilActivity.class));
             }
         });
