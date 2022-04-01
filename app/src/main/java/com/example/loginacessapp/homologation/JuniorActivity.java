@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.loginacessapp.JuryActivity;
+import com.example.loginacessapp.jurynavbar;
 import com.example.loginacessapp.QRScanner;
 import com.example.loginacessapp.R;
 import com.example.loginacessapp.ReceptionActivity;

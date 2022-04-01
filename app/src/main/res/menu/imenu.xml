@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/suiveur"
+        android:title="suiveur"
+        android:icon="@drawable/psr"/>
+    <item android:id="@+id/tterrain"
+        android:title="terrain"
+        android:icon="@drawable/tt"/>
+    <item android:id="@+id/autonome"
+        android:title="autonome"
+        android:icon="@drawable/pau"/>
+    <item android:id="@+id/junior"
+        android:title="junior"
+
+        android:icon="@drawable/pjr"/>
+</menu>

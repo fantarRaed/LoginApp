@@ -21,4 +21,17 @@
     <string name="text_score">SCORE</string>
     <string name="setscore">Enregistrer le score</string>
     //============
+    <string name="team_name">Team_name</string>
+    <string name="checkbox1">task1</string>
+    <string name="checkbox2">task2</string>
+    <string name="checkbox3">task3</string>
+    <string name="checkbox4">task4</string>
+    <string name="checkbox5">task5</string>
+    <string name="checkbox6">task6</string>
+    <string name="checkbox7">task7</string>
+    <string name="checkbox8">task8</string>
+    <string name="checkbox9">task9</string>
+    <string name="checkbox10">task10</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
