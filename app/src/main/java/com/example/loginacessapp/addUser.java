@@ -36,6 +36,7 @@ public class addUser extends AppCompatActivity {
     }
 
     public void addTeam(View view) {
+
         EditText editText1 = (EditText) findViewById(R.id.EtNom);
         String username = editText1.getText().toString().trim();
 
