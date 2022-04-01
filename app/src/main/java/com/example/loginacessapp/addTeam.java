@@ -43,7 +43,7 @@ public class addTeam extends AppCompatActivity {
         String concours = editText3.getText().toString().trim();
 
         EditText editText4= (EditText) findViewById(R.id.numtel);
-        String numtel = editText3.getText().toString().trim();
+        long numtel = Integer.parseInt(editText4.getText().toString().trim());
 
 
         reference = FirebaseDatabase.getInstance().getReference("teams");
