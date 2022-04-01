@@ -5,46 +5,34 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.loginacessapp.JuryActivity;
 import com.example.loginacessapp.QRScanner;
 import com.example.loginacessapp.R;
-import com.example.loginacessapp.ReceptionActivity;
+import com.example.loginacessapp.Team;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
 import java.util.ArrayList;
 
 public class JuniorActivity extends AppCompatActivity {
+
     private TextView name,score;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("teams");
     private RecyclerView recyclerView;
     private MyAdapter adapter;
-    private ArrayList<JuniorModel> list;
-/*
-    //=====list=====
-    private FirebaseFirestore firebaseFirestore;
-    private RecyclerView mFirestoreList;
-    private FirestoreRecyclerAdapter adapter;
-    //==============
-*/
+    private ArrayList<Team> list;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_junior);
-
         Button btn = findViewById(R.id.btnscan);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,8 +78,9 @@ public class JuniorActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                    JuniorModel model = dataSnapshot.getValue(JuniorModel.class);
-                    list.add(model);
+                    Team model = dataSnapshot.getValue(Team.class);
+                    if(model.getConcours().equals("junior") && model.getScore_homologation()>-1)
+                        list.add(model);
                 }
                 adapter.notifyDataSetChanged();
             }

@@ -5,20 +5,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.loginacessapp.R;
-
+import com.example.loginacessapp.Team;
 import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
-    ArrayList<JuniorModel> mList;
+    ArrayList<Team> mList;
     Context context;
 
-    public MyAdapter(Context context, ArrayList<JuniorModel> mList){
+    public MyAdapter(Context context, ArrayList<Team> mList){
         this.mList = mList;
         this.context = context;
     }
@@ -31,7 +29,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder , int position){
-    JuniorModel model = mList.get(position);
+    Team model = mList.get(position);
     holder.name.setText(model.getTeam_id());
     holder.score.setText(model.getScore_homologation()+"");
     }
