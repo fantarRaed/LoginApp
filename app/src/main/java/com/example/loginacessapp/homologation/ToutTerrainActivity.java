@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.loginacessapp.QRScanner;
 import com.example.loginacessapp.R;
+import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 
 public class ToutTerrainActivity extends AppCompatActivity {
     /*
@@ -33,21 +34,21 @@ public class ToutTerrainActivity extends AppCompatActivity {
             }
         });
 
-        Button bt1 = findViewById(R.id.btnsuiveur);
+        BottomNavigationItemView bt1 = findViewById(R.id.btnsuiveur);
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ToutTerrainActivity.this, SuiveurActivity.class));
             }
         });
-        Button bt2 = findViewById(R.id.btnautonome);
+        BottomNavigationItemView bt2 = findViewById(R.id.btnautonome);
         bt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ToutTerrainActivity.this, AutonomeActivity.class));
             }
         });
-        Button bt3 = findViewById(R.id.btnjunior);
+        BottomNavigationItemView bt3 = findViewById(R.id.btnjunior);
         bt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
