@@ -24,7 +24,7 @@
             android:textSize="40dp"
             android:textStyle="bold"/>
 
-        <TextView
+        <Button
             android:id="@+id/btnscan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,14 +54,14 @@
             android:text="@string/liste"
             android:textSize="25dp" />
 
-        <ImageView
+        <Button
             android:id="@+id/btnresearch"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center_vertical"
             android:background="@drawable/research"
             android:layout_marginStart="10dp">
-        </ImageView>
+        </Button>
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

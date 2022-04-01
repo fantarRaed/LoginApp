@@ -26,7 +26,7 @@ public class SuiveurActivity extends AppCompatActivity {
         setContentView(R.layout.activity_suiveur);
 
 
-        TextView btn = findViewById(R.id.btnscan);
+        Button btn = findViewById(R.id.btnscan);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

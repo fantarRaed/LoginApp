@@ -29,7 +29,7 @@ public class JuniorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_junior);
 
-        TextView btn = findViewById(R.id.btnscan);
+        Button btn = findViewById(R.id.btnscan);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
