@@ -11,6 +11,8 @@
         <entry key="..\:/LoginAcessApp/app/src/main/res/layout/activity_main.xml" value="0.23716632443531827" />
         <entry key="..\:/LoginAcessApp/app/src/main/res/layout/activity_reception.xml" value="0.22826086956521738" />
         <entry key="..\:/LoginAcessApp/app/src/main/res/layout/activity_user.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/drawable/item3.xml" value="0.1375" />
+        <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/drawable/selector.xml" value="0.1375" />
         <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_add_team.xml" value="0.234375" />
         <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_add_user.xml" value="0.234375" />
         <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_admin.xml" value="0.178125" />
@@ -19,13 +21,38 @@
         <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_input.xml" value="0.1890625" />
         <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_junior.xml" value="0.1890625" />
         <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_jury.xml" value="0.178125" />
+        <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_jurynavbar.xml" value="0.25" />
         <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_main.xml" value="0.178125" />
+        <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_qrcode.xml" value="0.12228260869565218" />
+        <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_qrscanner1.xml" value="0.12228260869565218" />
         <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_reception.xml" value="0.178125" />
         <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_suiveur.xml" value="0.1890625" />
         <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_tout_terrain.xml" value="0.1890625" />
         <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/activity_user.xml" value="0.178125" />
+        <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/fragment_autonome.xml" value="0.25" />
+        <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/fragment_junior.xml" value="0.25" />
+        <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/fragment_suiveur.xml" value="0.25" />
+        <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/fragment_tterrain.xml" value="0.25" />
         <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/item_of_list.xml" value="0.1890625" />
+        <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/layout/jury.xml" value="0.25" />
+        <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/menu/imenu.xml" value="0.25" />
         <entry key="..\:/Users/21651/Desktop/LoginApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1375" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/activity_junior.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/activity_jury.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/activity_jurynavbar.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/activity_qrscanner1.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/activity_reception.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/activity_suiveur.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/activity_tout_terrain.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/activity_user.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/fragment_autonome.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/fragment_junior.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/fragment_suiveur.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/fragment_suiveur2.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/fragment_tterrain.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/item_of_list.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Ibrahim/Desktop/LoginApp/app/src/main/res/layout/jury.xml" value="0.20260416666666667" />
       </map>
     </option>
   </component>

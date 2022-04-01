@@ -21,9 +21,9 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText username,
-            password;
+    private EditText username,password;
     private Button login;
+
     Switch active;
 
     @Override
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                                     else if (dataSnapshot.child(input1).child("as").getValue(String.class).equals("jury")){
                                         preferences.setDataLogin(MainActivity.this, true);
                                         preferences.setDataAs(MainActivity.this, "jury");
-                                        startActivity(new Intent(MainActivity.this, JuryActivity.class));
+                                        startActivity(new Intent(MainActivity.this, jurynavbar.class));
                                     }
                                     else if (dataSnapshot.child(input1).child("as").getValue(String.class).equals("homologation")){
                                         preferences.setDataLogin(MainActivity.this, true);
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                                     }
                                     else if (dataSnapshot.child(input1).child("as").getValue(String.class).equals("jury")){
                                         preferences.setDataLogin(MainActivity.this, false);
-                                        startActivity(new Intent(MainActivity.this, JuryActivity.class));
+                                        startActivity(new Intent(MainActivity.this, jurynavbar.class));
                                     }
                                     else if (dataSnapshot.child(input1).child("as").getValue(String.class).equals("homologation")){
                                         preferences.setDataLogin(MainActivity.this, false);

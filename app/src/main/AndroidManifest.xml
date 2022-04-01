@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.loginacessapp">
-
-    <!--qr code-->
+    <!-- qr code -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <!--=======-->
 
     <application
         android:allowBackup="true"
@@ -14,13 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginAcessApp">
         <activity
+            android:name=".qrscanner1"
+            android:exported="false" />
+        <activity
+            android:name=".jurynavbar"
+            android:exported="false" />
+        <activity
             android:name=".addTeam"
             android:exported="false" />
         <activity
             android:name=".addUser"
             android:exported="false" />
         <activity
-            android:name=".JuryActivity"
+            android:name=".juryActivity"
             android:exported="false" />
         <activity
             android:name=".ReceptionActivity"
@@ -42,24 +46,25 @@
         </activity>
         <activity
             android:name=".homologation.JuniorActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".homologation.AcceuilActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".homologation.AutonomeActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".homologation.InputActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".homologation.SuiveurActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".homologation.ToutTerrainActivity"
-            android:exported="false"/>
-        <activity android:name=".QRScanner"
-            android:exported="false"/>
+            android:exported="false" />
+        <activity
+            android:name=".QRScanner"
+            android:exported="false" />
     </application>
 
 </manifest>
