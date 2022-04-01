@@ -67,6 +67,7 @@ public class QRScanner extends AppCompatActivity implements ZXingScannerView.Res
 
         String data = rawResult.getText().toString();
         //dbref.push().setValue(data);
+
         Intent intent = new Intent(this, InputActivity.class);
         intent.putExtra(DATA,data);
         startActivity(intent);

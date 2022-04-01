@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".homologation.AcceuilActivity">
 
     <TextView
@@ -20,65 +21,65 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_below="@id/HomeText"
-        android:layout_marginTop="20dp">
-
-    <TextView
-        android:id="@+id/btnj"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/btn_scan"
-        android:paddingHorizontal="40dp"
-        android:paddingVertical="20dp"
-        android:text="@string/title_junior"
-        android:textColor="@color/white"
-        android:textSize="23dp" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/btns"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/btn_scan"
-        android:paddingHorizontal="40dp"
-        android:paddingVertical="20dp"
-        android:text="@string/title_suiveur"
-        android:textColor="@color/white"
-        android:textSize="23dp" />
+        <Button
+            android:id="@+id/btnj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_scan"
+            android:paddingHorizontal="77dp"
+            android:paddingVertical="20dp"
+            android:text="@string/title_junior"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
 
-    <TextView
-        android:id="@+id/btna"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/btn_scan"
-        android:paddingHorizontal="40dp"
-        android:paddingVertical="20dp"
-        android:text="@string/title_autonome"
-        android:textColor="@color/white"
-        android:textSize="23dp" />
+        <Button
+            android:id="@+id/btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_scan"
+            android:paddingHorizontal="70dp"
+            android:paddingVertical="20dp"
+            android:text="@string/title_suiveur"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
 
-    <TextView
-        android:id="@+id/btnt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/btn_scan"
-        android:paddingHorizontal="40dp"
-        android:paddingVertical="20dp"
-        android:text="@string/title_tout_terrain"
-        android:textColor="@color/white"
-        android:textSize="23dp" />
+        <Button
+            android:id="@+id/btna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_scan"
+            android:paddingHorizontal="57dp"
+            android:paddingVertical="20dp"
+            android:text="@string/title_autonome"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
+
+        <Button
+            android:id="@+id/btnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_scan"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="20dp"
+            android:text="@string/title_tout_terrain"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
     </LinearLayout>
 
 </RelativeLayout>

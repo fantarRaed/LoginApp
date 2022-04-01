@@ -12,6 +12,9 @@ import com.example.loginacessapp.JuryActivity;
 import com.example.loginacessapp.QRScanner;
 import com.example.loginacessapp.R;
 import com.example.loginacessapp.ReceptionActivity;
+import com.google.android.material.bottomnavigation.BottomNavigationItemView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 
 public class JuniorActivity extends AppCompatActivity {
 /*
@@ -26,7 +29,7 @@ public class JuniorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_junior);
 
-        TextView btn = findViewById(R.id.btnscan);
+        Button btn = findViewById(R.id.btnscan);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,21 +37,22 @@ public class JuniorActivity extends AppCompatActivity {
             }
         });
 
-        Button bt1 = findViewById(R.id.btnsuiveur);
+
+        BottomNavigationItemView bt1 = findViewById(R.id.btnsuiveur);
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(JuniorActivity.this, SuiveurActivity.class));
             }
         });
-        Button bt2 = findViewById(R.id.btnautonome);
+        BottomNavigationItemView bt2 = findViewById(R.id.btnautonome);
         bt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(JuniorActivity.this, AutonomeActivity.class));
             }
         });
-        Button bt3 = findViewById(R.id.btntoutterrian);
+        BottomNavigationItemView bt3 = findViewById(R.id.btntoutterrian);
         bt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

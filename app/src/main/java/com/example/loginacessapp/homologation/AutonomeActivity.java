@@ -8,7 +8,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.loginacessapp.QRScanner;
 import com.example.loginacessapp.R;
+import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 
 public class AutonomeActivity extends AppCompatActivity {
 /*
@@ -24,29 +26,29 @@ public class AutonomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_autonome);
 
 
-        TextView btn = findViewById(R.id.btnscan);
+        Button btn = findViewById(R.id.btnscan);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AutonomeActivity.this, InputActivity.class));
+                startActivity(new Intent(AutonomeActivity.this, QRScanner.class));
             }
         });
 
-        Button bt1 = findViewById(R.id.btnsuiveur);
+        BottomNavigationItemView bt1 = findViewById(R.id.btnsuiveur);
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(AutonomeActivity.this, SuiveurActivity.class));
             }
         });
-        Button bt2 = findViewById(R.id.btnjunior);
+        BottomNavigationItemView bt2 = findViewById(R.id.btnjunior);
         bt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(AutonomeActivity.this, JuniorActivity.class));
             }
         });
-        Button bt3 = findViewById(R.id.btntoutterrian);
+        BottomNavigationItemView bt3 = findViewById(R.id.btntoutterrian);
         bt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homologation.InputActivity">
+    tools:context=".homologation.InputActivity"
+    android:background="@drawable/bg">
 
     <TextView
         android:id="@+id/title_input"
@@ -14,8 +15,8 @@
         android:padding="20dp"
         android:text="Homologation"
         android:textAlignment="center"
-        android:textStyle="bold"
-        android:textSize="40dp" />
+        android:textSize="40dp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -142,6 +143,7 @@
                 android:text="obtenir le score "
                 android:textAlignment="center"
                 android:textColor="@color/white"
+                android:background="@color/darkYellow"
                 android:textSize="23dp" />
 
             <TextView
@@ -157,7 +159,7 @@
                 android:textSize="30dp" />
         </LinearLayout>
 
-        <TextView
+        <Button
             android:id="@+id/btnscore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

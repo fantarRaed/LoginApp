@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import com.example.loginacessapp.homologation.AcceuilActivity;
 import com.example.loginacessapp.homologation.JuniorActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                                     else if (dataSnapshot.child(input1).child("as").getValue(String.class).equals("homologation")){
                                         preferences.setDataLogin(MainActivity.this, true);
                                         preferences.setDataAs(MainActivity.this, "homologation");
-                                        startActivity(new Intent(MainActivity.this, JuniorActivity.class));
+                                        startActivity(new Intent(MainActivity.this, AcceuilActivity.class));
                                     }
                                 } else {
                                     if (dataSnapshot.child(input1).child("as").getValue(String.class).equals("admin")) {
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                                     }
                                     else if (dataSnapshot.child(input1).child("as").getValue(String.class).equals("homologation")){
                                         preferences.setDataLogin(MainActivity.this, false);
-                                        startActivity(new Intent(MainActivity.this, JuniorActivity.class));
+                                        startActivity(new Intent(MainActivity.this, AcceuilActivity.class));
                                     }
 
 

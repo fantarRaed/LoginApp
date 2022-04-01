@@ -23,9 +23,6 @@
             android:name=".JuryActivity"
             android:exported="false" />
         <activity
-            android:name=".HomologationActivity"
-            android:exported="false" />
-        <activity
             android:name=".ReceptionActivity"
             android:exported="false" />
         <activity
