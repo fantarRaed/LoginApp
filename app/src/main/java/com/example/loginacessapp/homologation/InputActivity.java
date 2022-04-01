@@ -8,14 +8,17 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.loginacessapp.QRScanner;
 import com.example.loginacessapp.R;
 import com.example.loginacessapp.Team;
 import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class InputActivity extends AppCompatActivity {
 
@@ -35,8 +38,7 @@ public class InputActivity extends AppCompatActivity {
             public void onClick(View v) {
                 db = FirebaseDatabase.getInstance().getReference("teams").child(data);
                 db.child("score_homologation").setValue(Integer.parseInt(((TextView)findViewById(R.id.score)).getText().toString()));
-                /*
-                DataSnapshot dataSnapshot = db.get().getResult();
+                /*DataSnapshot dataSnapshot = db.get().getResult();
                 Team model = dataSnapshot.getValue(Team.class);
                 if(model.getConcours().equals("junior")) {
                     startActivity(new Intent(InputActivity.this, JuniorActivity.class));
