@@ -31,7 +31,7 @@ public class juryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.jury);
         team_id=findViewById(R.id.team_id);
         team_name=findViewById(R.id.team_name);
 

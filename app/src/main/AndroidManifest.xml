@@ -15,9 +15,6 @@
             android:name=".qrscanner1"
             android:exported="false" />
         <activity
-            android:name=".qrcode"
-            android:exported="false" />
-        <activity
             android:name=".jurynavbar"
             android:exported="false" />
         <activity
@@ -27,7 +24,7 @@
             android:name=".addUser"
             android:exported="false" />
         <activity
-            android:name=".JuryActivity"
+            android:name=".juryActivity"
             android:exported="false" />
         <activity
             android:name=".ReceptionActivity"

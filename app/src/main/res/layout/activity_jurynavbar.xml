@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".jurynavbar"
     android:background="@drawable/bg">
+
     <FrameLayout
         android:id="@+id/bc"
         android:layout_width="match_parent"
