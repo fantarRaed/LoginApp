@@ -30,6 +30,9 @@ public class addTeam extends AppCompatActivity {
 
     public void addTeam(View view) {
 
+        EditText  editText0 = (EditText) findViewById(R.id.teamid);
+        String teamid = editText0.getText().toString().trim();
+
         EditText  editText1 = (EditText) findViewById(R.id.teamname);
         String teamname = editText1.getText().toString().trim();
 
@@ -45,10 +48,10 @@ public class addTeam extends AppCompatActivity {
 
         reference = FirebaseDatabase.getInstance().getReference("teams");
 
-        Team team = new Team(teamname,chef,concours,numtel);
+        Team team = new Team(teamid,teamname,chef,concours,numtel);
         System.out.println(team);
 
-        reference.child(team.id).setValue(team).addOnCompleteListener(new OnCompleteListener<Void>() {
+        reference.child(teamid.toString()).setValue(team).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
 
