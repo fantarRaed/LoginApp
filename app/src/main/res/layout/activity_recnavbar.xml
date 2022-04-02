@@ -5,16 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".recnavbar"
-    android:background="@drawable/bg">
+    android:background="@color/grey">
 
     <FrameLayout
         android:id="@+id/bcrec"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/navbarrec"
-
-        android:layout_marginTop="19dp"
-        android:layout_marginBottom="1dp" />
+        android:layout_marginBottom="10dp" />
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -22,11 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/corner"
         app:itemIconSize="25dp"
         app:itemIconTint="#1D1C18"

@@ -49,5 +49,7 @@ public class Team {
     }
     //============
 
+    public Boolean getPres(){return pres;}
+
 
 }

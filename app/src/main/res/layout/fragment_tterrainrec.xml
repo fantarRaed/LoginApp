@@ -7,28 +7,45 @@
     android:background="@drawable/bg">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="427dp"
-        android:layout_height="200dp"
-        android:background="@drawable/item3"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Concours\nTout Terrain"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/black"
+            android:padding="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/item3" />
 
-        android:fontFamily="serif-monospace"
-        android:text="tout_terrain"
-        android:textColor="@color/white"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/scan_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/item"
+            android:text="@string/scan"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp" />
 
-    <Button
-        android:id="@+id/scan_r_t"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-
-        android:layout_gravity="center"
-
-        android:background="@drawable/item"
-        android:text="@string/scan"
-        android:textColor="@color/white"
-        android:textSize="40sp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_t"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="30dp"
+            android:layout_marginVertical="10dp"/>
+    </LinearLayout>
 
 </FrameLayout>
