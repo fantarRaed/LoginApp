@@ -69,7 +69,7 @@ public class suiveurrec extends Fragment {
         qrbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(),qrscanner1.class));
+                startActivity(new Intent(getActivity(),QRScanRec.class));
             }
         });
         return  view;

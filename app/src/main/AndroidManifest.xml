@@ -15,6 +15,9 @@
             android:name=".qrscanner1"
             android:exported="false" />
         <activity
+            android:name=".QRScanRec"
+            android:exported="false" />
+        <activity
             android:name=".jurynavbar"
             android:exported="false" />
         <activity
