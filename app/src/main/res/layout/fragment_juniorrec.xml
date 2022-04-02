@@ -21,7 +21,7 @@
         />
 
     <Button
-        android:id="@+id/scanbutton6"
+        android:id="@+id/scan_r_j"
         android:layout_width="300dp"
         android:layout_height="60dp"
 

@@ -9,18 +9,16 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.loginacessapp.databinding.ActivityJurynavbarBinding;
-import com.example.loginacessapp.databinding.ActivityReceptionBinding;
-import com.example.loginacessapp.databinding.ActivityReceptionBinding;
+import com.example.loginacessapp.databinding.ActivityRecnavbarBinding;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class ReceptionActivity extends AppCompatActivity {
-    ActivityReceptionBinding binding;
+public class recnavbar extends AppCompatActivity {
+    ActivityRecnavbarBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityReceptionBinding.inflate(getLayoutInflater());
+        binding = ActivityRecnavbarBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replacefragment(new suiveurrec());
         binding.navbarrec.setOnItemSelectedListener(item -> {
@@ -38,26 +36,15 @@ public class ReceptionActivity extends AppCompatActivity {
                 case R.id.auto:
                     replacefragment(new autonomerec());
                     break;
-
             }
-
-
-
-
             return true;
-
-
         });
     }
     private void replacefragment(Fragment fragment) {
-
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.bc,fragment);
+        fragmentTransaction.replace(R.id.bcrec,fragment);
         fragmentTransaction.commit();
-
-
     }
-
 }
 

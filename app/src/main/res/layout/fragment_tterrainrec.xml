@@ -20,7 +20,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/scanbutton8"
+        android:id="@+id/scan_r_t"
         android:layout_width="300dp"
         android:layout_height="60dp"
 

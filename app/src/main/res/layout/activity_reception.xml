@@ -4,38 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReceptionActivity"
-    android:background="@drawable/bg">
-    <FrameLayout
-        android:id="@+id/bc"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/navbarrec"
-
-        android:layout_marginTop="19dp"
-        android:layout_marginBottom="1dp" />
-
-
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navbarrec"
-        android:layout_width="match_parent"
+    tools:context=".recActivity">
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:text="RECEPTION \n ACTIVITY"
+        android:textSize="50sp"
+        android:layout_centerInParent="true">
 
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/corner"
-        app:itemIconSize="25dp"
-        app:itemIconTint="#1D1C18"
-
-        app:itemRippleColor="@android:color/transparent"
-        app:itemTextColor="#1d1c18"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/imenu3" />
-
-
+    </TextView>
 
 </RelativeLayout>

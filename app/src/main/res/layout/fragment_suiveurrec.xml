@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:text="MAQUETTE SUIVEUR"
+        android:text="MAQUETTE SUIVEUR Rec"
 
 
         android:textSize="50sp"
@@ -21,7 +21,7 @@
         />
 
     <Button
-        android:id="@+id/scanbutton5"
+        android:id="@+id/scan_r_s"
         android:layout_width="300dp"
         android:layout_height="60dp"
 

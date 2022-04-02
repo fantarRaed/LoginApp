@@ -15,11 +15,10 @@
         android:text="MAQUETTE AUTONOME"
         android:textColor="@color/white"
         android:textSize="50sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/scanbutton7"
+        android:id="@+id/scan_r_a"
         android:layout_width="300dp"
         android:layout_height="60dp"
 

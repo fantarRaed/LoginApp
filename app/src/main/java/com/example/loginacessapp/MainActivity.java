@@ -12,7 +12,6 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import com.example.loginacessapp.homologation.AcceuilActivity;
-import com.example.loginacessapp.homologation.JuniorActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -56,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                                     } else if (dataSnapshot.child(input1).child("as").getValue(String.class).equals("réception")){
                                         preferences.setDataLogin(MainActivity.this, true);
                                         preferences.setDataAs(MainActivity.this, "réception");
-                                        startActivity(new Intent(MainActivity.this, ReceptionActivity.class));
+                                        startActivity(new Intent(MainActivity.this, recnavbar.class));
                                     }
                                     else if (dataSnapshot.child(input1).child("as").getValue(String.class).equals("jury")){
                                         preferences.setDataLogin(MainActivity.this, true);
@@ -75,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
                                     } else if (dataSnapshot.child(input1).child("as").getValue(String.class).equals("réception")){
                                         preferences.setDataLogin(MainActivity.this, false);
-                                        startActivity(new Intent(MainActivity.this, ReceptionActivity.class));
+                                        startActivity(new Intent(MainActivity.this, recnavbar.class));
                                     }
                                     else if (dataSnapshot.child(input1).child("as").getValue(String.class).equals("jury")){
                                         preferences.setDataLogin(MainActivity.this, false);

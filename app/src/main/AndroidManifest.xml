@@ -27,7 +27,10 @@
             android:name=".juryActivity"
             android:exported="false" />
         <activity
-            android:name=".ReceptionActivity"
+            android:name=".recActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".recnavbar"
             android:exported="false" />
         <activity
             android:name=".UserActivity"
