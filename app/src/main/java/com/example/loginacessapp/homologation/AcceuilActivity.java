@@ -1,49 +1,56 @@
 package com.example.loginacessapp.homologation;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
+import android.os.Bundle;
+import android.view.MenuItem;
 
 import com.example.loginacessapp.R;
+import com.example.loginacessapp.databinding.ActivityAcceuilBinding;
+
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class AcceuilActivity extends AppCompatActivity {
 
+    ActivityAcceuilBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_acceuil);
+        binding = ActivityAcceuilBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        replacefragment(new suiveurhomo());
+        binding.BottomNavigationView.setOnItemSelectedListener(item -> {
 
-        Button bt1 = findViewById(R.id.btnj);
-        bt1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(AcceuilActivity.this, JuniorActivity.class));
+            switch(item.getItemId()) {
+                case R.id.btnsuiveur:
+                    replacefragment(new suiveurhomo());
+                    break;
+                case R.id.btnjunior:
+                    replacefragment(new juniorhomo());
+                    break;
+                case R.id.btntoutterrian:
+                    replacefragment(new tterrainhomo());
+                    break;
+                case R.id.btnautonome:
+                    replacefragment(new autonomehomo());
+                    break;
+
             }
-        });
-        Button bt2 = findViewById(R.id.btns);
-        bt2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(AcceuilActivity.this, SuiveurActivity.class));
-            }
-        });
-        Button bt3 = findViewById(R.id.btna);
-        bt3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(AcceuilActivity.this, AutonomeActivity.class));
-            }
-        });
-        Button bt4 = findViewById(R.id.btnt);
-        bt4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(AcceuilActivity.this, ToutTerrainActivity.class));
-            }
+            return true;
         });
     }
+    private void replacefragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.bc1,fragment);
+        fragmentTransaction.commit();
+    }
 }
+
+
+
