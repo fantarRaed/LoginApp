@@ -96,7 +96,7 @@ public class autonome extends Fragment {
         adapter = new MyAdapterJury(this.getContext(),list);
         recyclerView.setAdapter(adapter);
 
-        Query Topteams = root.orderByChild("score_jury").limitToLast(1);
+        Query Topteams = root.orderByChild("score_jury")/*.limitToLast(1)*/;
         Topteams.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
