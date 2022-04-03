@@ -38,6 +38,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public int getItemCount(){
         return mList.size();
     }
+
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView name,score;
