@@ -1,19 +1,15 @@
 package com.example.loginacessapp.homologation;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
-
+import android.view.View;
+import com.example.loginacessapp.MainActivity;
 import com.example.loginacessapp.R;
 import com.example.loginacessapp.databinding.ActivityAcceuilBinding;
-
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class AcceuilActivity extends AppCompatActivity {
 
@@ -50,6 +46,11 @@ public class AcceuilActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.bc1,fragment);
         fragmentTransaction.commit();
     }
+
+    public void disconnect(View view){
+        startActivity(new Intent(this, MainActivity.class));
+    }
+
 }
 
 

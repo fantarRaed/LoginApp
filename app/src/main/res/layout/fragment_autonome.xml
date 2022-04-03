@@ -26,26 +26,46 @@
             android:layout_marginBottom="30dp"
             android:background="@drawable/item3" />
 
-        <Button
-            android:id="@+id/scan_j"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/item"
-            android:text="@string/scan"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:paddingHorizontal="30dp"
-            android:paddingVertical="10dp" />
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/scan_j"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item"
+                android:text="@string/scan"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="10dp" />
+
+            <Button
+                android:id="@+id/disconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/item"
+                android:clickable="true"
+                android:onClick="disconnect"
+                android:text="déconnection"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:layout_marginStart="20dp"/>
+
+        </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/jury_a"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
             android:paddingHorizontal="30dp"
             android:layout_marginVertical="10dp"/>
     </LinearLayout>
-
 
 </FrameLayout>

@@ -1,7 +1,6 @@
 package com.example.loginacessapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +20,11 @@ public class AdminActivity extends AppCompatActivity {
 
     public void addTeam(View view) {
         Intent intent = new Intent(this,addTeam.class);
+        startActivity(intent);
+    }
+
+    public void disconnect(View view){
+        Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
 }

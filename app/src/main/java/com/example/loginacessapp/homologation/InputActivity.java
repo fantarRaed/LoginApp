@@ -35,37 +35,41 @@ public class InputActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int s = Integer.parseInt(((TextView)findViewById(R.id.score)).getText().toString());
-                db = FirebaseDatabase.getInstance().getReference("teams").child(data);
-                db.child("score_homologation").setValue(s).addOnSuccessListener(suc-> // set to add or update
-                {
-                    Toast.makeText(InputActivity.this, "Le score de ** "+data+" ** est bien ajouté", Toast.LENGTH_SHORT).show();
-                }).addOnFailureListener(er-> {
-                    Toast.makeText(InputActivity.this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
-                });
+                if(((TextView)findViewById(R.id.score)).getText().toString().equals("SCORE")){
+                    Toast.makeText(InputActivity.this, "Tu dois appuier sur le bouton 'OBTENIR LE SCORE' ", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    int s = Integer.parseInt(((TextView)findViewById(R.id.score)).getText().toString());
+                    db = FirebaseDatabase.getInstance().getReference("teams").child(data);
+                    db.child("score_homologation").setValue(s).addOnSuccessListener(suc-> // set to add or update
+                    {
+                        Toast.makeText(InputActivity.this, "Le score de ** "+data+" ** est bien ajouté", Toast.LENGTH_SHORT).show();
+                    }).addOnFailureListener(er-> {
+                        Toast.makeText(InputActivity.this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
+                    });
+                    startActivity(new Intent(InputActivity.this,AcceuilActivity.class));
+/*
+                    db.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            maquette = dataSnapshot.child("concours").getValue().toString();
+                            if (maquette.equals("junior")) {
+                                startActivity(new Intent(InputActivity.this, juniorhomo.class));
+                            } else if (maquette.equals("autonome")) {
+                                startActivity(new Intent(InputActivity.this, autonomehomo.class));
+                            } else if (maquette.equals("suiveur")) {
+                                startActivity(new Intent(InputActivity.this, suiveurhomo.class));
+                            } else if (maquette.equals("toutterrain")) {
+                                startActivity(new Intent(InputActivity.this, tterrainhomo.class));
+                            }
+                        }
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {}
 
-                db.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        maquette = dataSnapshot.child("concours").getValue().toString();
-                        if(maquette.equals("junior")) {
-                            startActivity(new Intent(InputActivity.this, JuniorActivity.class));
-                        }
-                        else if (maquette.equals("autonome")){
-                            startActivity(new Intent(InputActivity.this, AutonomeActivity.class));
-                        }
-                        else if (maquette.equals("suiveur")){
-                            startActivity(new Intent(InputActivity.this, SuiveurActivity.class));
-                        }
-                        else if (maquette.equals("toutterrain")){
-                            startActivity(new Intent(InputActivity.this, ToutTerrainActivity.class));
-                        }
-                    }
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
+                    });
 
-                    }
-                });
+ */
+                }
             }
         });
     }

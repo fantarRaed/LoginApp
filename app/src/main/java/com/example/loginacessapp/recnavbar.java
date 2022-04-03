@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import com.example.loginacessapp.databinding.ActivityRecnavbarBinding;
 
 public class recnavbar extends AppCompatActivity {
@@ -39,6 +41,10 @@ public class recnavbar extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.bcrec,fragment);
         fragmentTransaction.commit();
+    }
+
+    public void disconnect(View view){
+        startActivity(new Intent(this,MainActivity.class));
     }
 }
 

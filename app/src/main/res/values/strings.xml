@@ -34,4 +34,18 @@
     <string name="checkbox10">task10</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="spinner_array">
+        <item>junior</item>
+        <item>suiveur</item>
+        <item>autonome</item>
+        <item>toutterrain</item>
+    </string-array>
+    <string-array name="spinner_user_array">
+        <item>réception</item>
+        <item>homologation</item>
+        <item>jury</item>
+        <item>admin</item>
+    </string-array>
+
 </resources>

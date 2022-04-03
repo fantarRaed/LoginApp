@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,36 +8,28 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
         android:orientation="vertical">
 
-
         <TextView
-            android:id="@+id/titleUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="120dp"
             android:text="Ajouter un utilisateur"
             android:textAlignment="center"
-            android:textSize="30sp"></TextView>
+            android:textSize="30sp" />
 
         <LinearLayout
-            android:id="@+id/LlNom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/titleUser"
-            android:layout_marginHorizontal="24dp"
             android:layout_marginTop="40dp"
-            android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/TvNom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawablePadding="10dp"
-                android:paddingLeft="10dp"
-                android:text="First Name:"
+                android:text="Username :"
                 android:textColor="@color/black"
                 android:textSize="23sp" />
 
@@ -45,32 +37,23 @@
                 android:id="@+id/EtNom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:lines="1"
-                android:paddingTop="15dp"
-                android:paddingRight="10dp"
+                android:layout_marginStart="10dp"
+                android:lines="2"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
-
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/LlPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/titleUser"
-            android:layout_marginHorizontal="24dp"
-            android:layout_marginTop="40dp"
-            android:gravity="center"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/TvPass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawablePadding="10dp"
-                android:paddingLeft="10dp"
-                android:text="Password:"
+                android:text="Password :"
                 android:textColor="@color/black"
                 android:textSize="23sp" />
 
@@ -78,62 +61,44 @@
                 android:id="@+id/EtPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:lines="1"
-                android:paddingTop="15dp"
-                android:paddingRight="10dp"
+                android:layout_marginStart="10dp"
+                android:lines="2"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
-
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/LlRole"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/titleUser"
-            android:layout_marginHorizontal="24dp"
             android:layout_marginTop="40dp"
-            android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/TvRole"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawablePadding="10dp"
-                android:paddingLeft="10dp"
-                android:text="Role:"
+                android:text="Role :"
                 android:textColor="@color/black"
                 android:textSize="23sp" />
 
-            <EditText
-                android:id="@+id/EtRole"
+            <Spinner
+                android:id="@+id/spinner_user"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:lines="1"
-                android:paddingTop="15dp"
-                android:paddingRight="10dp"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp" />
 
         </LinearLayout>
-
-
 
         <Button
             android:id="@+id/addTeam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/button_login"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/item"
             android:clickable="true"
             android:onClick="addTeam"
             android:text="Enregistrer" />
-
 
     </LinearLayout>
 
@@ -142,7 +107,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:visibility="gone"
-        />
+        android:visibility="gone" />
 
 </RelativeLayout>

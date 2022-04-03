@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,45 +9,51 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="ADMIN ACTIVITY"
-        android:textAlignment="center"
+        android:orientation="vertical"
         android:layout_marginTop="50dp"
-        android:layout_marginHorizontal="20dp"
-        android:textSize="50sp">
+        android:layout_marginHorizontal="20dp">
 
-    </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADMIN ACTIVITY"
+            android:textAlignment="center"
+            android:textSize="40sp">
+        </TextView>
 
-    <Button
-        android:id="@+id/addUser"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/button_login"
-        android:text="Ajouter Utilisateur"
-        android:clickable="true"
-        android:onClick="addUser"/>
+        <Button
+            android:id="@+id/addUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/item"
+            android:text="Ajouter Un Utilisateur"
+            android:clickable="true"
+            android:onClick="addUser"/>
 
         <Button
             android:id="@+id/addTeam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/button_login"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/item"
             android:clickable="true"
             android:onClick="addTeam"
-            android:text="Ajouter Equipe" />
+            android:text="Ajouter Une Equipe" />
+
+        <Button
+            android:id="@+id/disconnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/item"
+            android:clickable="true"
+            android:onClick="disconnect"
+            android:text="Se déconnecter" />
+
     </LinearLayout>
-
-
 
 </RelativeLayout>
