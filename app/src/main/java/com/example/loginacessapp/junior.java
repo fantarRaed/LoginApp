@@ -3,12 +3,24 @@ package com.example.loginacessapp;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 
 /**
@@ -17,6 +29,13 @@ import android.widget.Button;
  * create an instance of this fragment.
  */
 public class junior extends Fragment {
+
+    private Button qrbtn;
+    private FirebaseDatabase db = FirebaseDatabase.getInstance();
+    private DatabaseReference root = db.getReference().child("teams");
+    private RecyclerView recyclerView;
+    private MyAdapterJury adapter;
+    private ArrayList<Team> list;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,7 +80,36 @@ public class junior extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_junior, container, false);
+        View view = inflater.inflate(R.layout.fragment_junior, container, false);
+        qrbtn=(Button)view.findViewById(R.id.scan_j);
+        qrbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(),qrscanner1.class));
+            }
+        });
+
+        recyclerView = view.findViewById(R.id.jury_j);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
+        list = new ArrayList<>();
+        adapter = new MyAdapterJury(this.getContext(),list);
+        recyclerView.setAdapter(adapter);
+
+        root.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    Team model = dataSnapshot.getValue(Team.class);
+                    if(model.getConcours().equals("junior") && model.getScore_jury()>-1)
+                        list.add(model);
+                }
+                adapter.notifyDataSetChanged();
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
+        return  view;
     }
 }

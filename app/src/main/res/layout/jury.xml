@@ -1,131 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
     tools:context=".juryActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:orientation="vertical"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp">
-        
-
-
+        android:layout_centerHorizontal="true">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Team id"
             android:textColor="@color/purple_700"
-            android:textSize="20dp"
-            />
-
-
+            android:textSize="20dp" />
 
         <EditText
             android:id="@+id/team_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15dp"
             android:text="id"
             android:textColor="@color/black"
-            />
+            android:textSize="15dp" />
+
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Team name"
             android:textColor="@color/purple_700"
-            android:textSize="20dp"
-            />
-
-
+            android:textSize="20dp" />
 
         <EditText
             android:id="@+id/team_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15dp"
             android:textColor="@color/black"
-            />
+            android:textSize="15dp" />
 
-
-        <CheckBox
-            android:id="@+id/checkBox1"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onCheckBoxClicked"
-            android:text="@string/checkbox1" />
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
 
-        <CheckBox
-            android:id="@+id/checkBox2"
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/checkbox1" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/checkbox5" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/checkbox2"
-            android:onClick="onCheckBoxClicked" />
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
 
-        <CheckBox
-            android:id="@+id/checkBox3"
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/checkbox2"
+                android:layout_marginEnd="100dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/checkbox6" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onCheckBoxClicked"
-            android:text="@string/checkbox3" />
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
 
-        <CheckBox
-            android:id="@+id/checkBox4"
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/checkbox3"
+                android:layout_marginEnd="100dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/checkbox7" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/checkbox4"
-            android:onClick="onCheckBoxClicked" />
-        <CheckBox
-            android:id="@+id/checkBox5"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/checkbox4"
+                android:layout_marginEnd="100dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/checkbox8" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/checkbox5"
-            android:onClick="onCheckBoxClicked" />
-        <CheckBox
-            android:id="@+id/checkBox6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/checkbox6"
-            android:onClick="onCheckBoxClicked" />
-        <CheckBox
-            android:id="@+id/checkBox7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/checkbox7"
-            android:onClick="onCheckBoxClicked" />
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/reset"
+                android:layout_marginEnd="80dp"/>
 
-        <ImageButton
-            android:id="@+id/imageButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginRight="16dp"
-            android:layout_weight="5"
-            android:background="@drawable/reset" />
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/submit" />
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="100dp"
-            android:layout_weight="5"
-            android:background="@drawable/submit" />
-
-    </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 

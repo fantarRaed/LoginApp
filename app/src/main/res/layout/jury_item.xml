@@ -2,7 +2,6 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="100dp"
     app:cardElevation="8dp"
@@ -17,7 +16,7 @@
         android:layout_gravity="center_vertical">
 
         <TextView
-            android:id="@+id/list_name"
+            android:id="@+id/list_name_jury"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
@@ -33,11 +32,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Score Homologation : "
+                android:text="Score Jury : "
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/list_score"
+                android:id="@+id/list_score_jury"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"

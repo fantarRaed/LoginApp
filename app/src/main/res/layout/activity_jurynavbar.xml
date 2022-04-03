@@ -1,42 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout class="androidx.appcompat.app.AlertController$RecycleListView" xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    class="androidx.appcompat.app.AlertController$RecycleListView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".jurynavbar"
-    android:background="@drawable/bg">
+    android:background="@color/grey">
 
     <FrameLayout
         android:id="@+id/bc"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/navbar"
-
-        android:layout_marginTop="19dp"
-        android:layout_marginBottom="1dp" />
-
+        android:layout_marginBottom="10dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/corner"
         app:itemIconSize="25dp"
         app:itemIconTint="#1D1C18"
-
         app:itemRippleColor="@android:color/transparent"
         app:itemTextColor="#1d1c18"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/imenu" />
-
-
-
 
 </RelativeLayout>

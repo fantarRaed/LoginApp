@@ -2,13 +2,21 @@ package com.example.loginacessapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +24,13 @@ import android.widget.Button;
  * create an instance of this fragment.
  */
 public class suiveur extends Fragment {
+
+    private Button qrbtn;
+    private FirebaseDatabase db = FirebaseDatabase.getInstance();
+    private DatabaseReference root = db.getReference().child("teams");
+    private RecyclerView recyclerView;
+    private MyAdapterJury adapter;
+    private ArrayList<Team> list;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,7 +40,6 @@ public class suiveur extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private Button qrbtn;
     public suiveur() {
         // Required empty public constructor
     }
@@ -54,8 +68,6 @@ public class suiveur extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-
-
         }
     }
 
@@ -64,12 +76,33 @@ public class suiveur extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_suiveur, container, false);
-        qrbtn=(Button)view.findViewById(R.id.scanbutton4);
+        qrbtn=(Button)view.findViewById(R.id.scan_j);
         qrbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(),qrscanner1.class));
+            }
+        });
 
+        recyclerView = view.findViewById(R.id.jury_s);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
+        list = new ArrayList<>();
+        adapter = new MyAdapterJury(this.getContext(),list);
+        recyclerView.setAdapter(adapter);
+
+        root.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    Team model = dataSnapshot.getValue(Team.class);
+                    if(model.getConcours().equals("suiveur") && model.getScore_jury()>-1)
+                        list.add(model);
+                }
+                adapter.notifyDataSetChanged();
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
             }
         });
         return  view;

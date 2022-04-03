@@ -17,7 +17,6 @@ public class AcceuilActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acceuil);
 
-
         Button bt1 = findViewById(R.id.btnj);
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override

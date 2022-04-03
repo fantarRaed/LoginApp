@@ -11,6 +11,5 @@
         android:icon="@drawable/pau"/>
     <item android:id="@+id/junior"
         android:title="junior"
-
         android:icon="@drawable/pjr"/>
 </menu>

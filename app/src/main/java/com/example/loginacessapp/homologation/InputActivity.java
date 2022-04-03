@@ -7,13 +7,11 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
-
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.loginacessapp.QRScanner;
 import com.example.loginacessapp.R;
-import com.example.loginacessapp.Team;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -23,6 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 public class InputActivity extends AppCompatActivity {
 
     DatabaseReference db;
+    String maquette = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,37 +30,47 @@ public class InputActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String data = intent.getStringExtra(QRScanner.DATA);
-
         Button btn = findViewById(R.id.btnscore);
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int s = Integer.parseInt(((TextView)findViewById(R.id.score)).getText().toString());
                 db = FirebaseDatabase.getInstance().getReference("teams").child(data);
-                db.child("score_homologation").setValue(Integer.parseInt(((TextView)findViewById(R.id.score)).getText().toString()));
-                /*DataSnapshot dataSnapshot = db.get().getResult();
-                Team model = dataSnapshot.getValue(Team.class);
-                if(model.getConcours().equals("junior")) {
-                    startActivity(new Intent(InputActivity.this, JuniorActivity.class));
-                }
-                else if (model.getConcours().equals("autonome")){
-                    startActivity(new Intent(InputActivity.this, AutonomeActivity.class));
-                }
-                else if (model.getConcours().equals("suiveur")){
-                    startActivity(new Intent(InputActivity.this, SuiveurActivity.class));
-                }
-                else if (model.getConcours().equals("toutterrain")){
-                    startActivity(new Intent(InputActivity.this, ToutTerrainActivity.class));
-                }
-                else*/
-                    startActivity(new Intent(InputActivity.this, AcceuilActivity.class));
+                db.child("score_homologation").setValue(s).addOnSuccessListener(suc-> // set to add or update
+                {
+                    Toast.makeText(InputActivity.this, "Le score de ** "+data+" ** est bien ajouté", Toast.LENGTH_SHORT).show();
+                }).addOnFailureListener(er-> {
+                    Toast.makeText(InputActivity.this, ""+er.getMessage(), Toast.LENGTH_SHORT).show();
+                });
+
+                db.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        maquette = dataSnapshot.child("concours").getValue().toString();
+                        if(maquette.equals("junior")) {
+                            startActivity(new Intent(InputActivity.this, JuniorActivity.class));
+                        }
+                        else if (maquette.equals("autonome")){
+                            startActivity(new Intent(InputActivity.this, AutonomeActivity.class));
+                        }
+                        else if (maquette.equals("suiveur")){
+                            startActivity(new Intent(InputActivity.this, SuiveurActivity.class));
+                        }
+                        else if (maquette.equals("toutterrain")){
+                            startActivity(new Intent(InputActivity.this, ToutTerrainActivity.class));
+                        }
+                    }
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
             }
         });
     }
 
-
-
     public void sum(View v) {
-
         int d;
         if (((EditText)findViewById(R.id.note_design)).getText().toString().equals(""))
             d=0;
@@ -87,5 +96,4 @@ public class InputActivity extends AppCompatActivity {
         else
             ((TextView)findViewById(R.id.score)).setText(-1+"");
     }
-
 }

@@ -29,6 +29,7 @@
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/drawable/btn_scan.xml" value="0.188" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_acceuil.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_add_team.xml" value="0.1796875" />
+        <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_autonome.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_junior.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_jury.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_jurynavbar.xml" value="0.1796875" />
@@ -38,6 +39,7 @@
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_suiveur.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_tout_terrain.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_user.xml" value="0.1796875" />
+        <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/fragment_autonome.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/fragment_autonomerec.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/fragment_junior.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/fragment_juniorrec.xml" value="0.1796875" />
@@ -47,7 +49,8 @@
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/fragment_tterrain.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/fragment_tterrainrec.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/item_of_list.xml" value="0.1796875" />
-        <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/jury.xml" value="0.1796875" />
+        <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/jury.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/jury_item.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/rec.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/rec_item.xml" value="0.1796875" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/menu/imenu.xml" value="0.1796875" />

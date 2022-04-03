@@ -7,7 +7,7 @@ public class Team {
     public String concours;
     public boolean pres=false;
     public long num_tel;
-    public int score_jury=0;
+    public int score_jury=-1;
     public int score_homologation=-1;
     //public String freind_team;
     //public boolean dej;
@@ -40,7 +40,7 @@ public class Team {
         return team_id;
     }
 
-    public long getScore_homologation() {
+    public int getScore_homologation() {
         return score_homologation;
     }
 
@@ -51,5 +51,7 @@ public class Team {
 
     public Boolean getPres(){return pres;}
 
-
+    public int getScore_jury() {
+        return score_jury;
+    }
 }

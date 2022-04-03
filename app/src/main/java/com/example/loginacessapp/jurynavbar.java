@@ -38,25 +38,15 @@ public class jurynavbar extends AppCompatActivity {
                     break;
 
             }
-
-
-
-
             return true;
-
-
         });
     }
     private void replacefragment(Fragment fragment) {
-
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.bc,fragment);
         fragmentTransaction.commit();
-
-
     }
-
 }
 
 

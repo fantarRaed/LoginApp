@@ -84,10 +84,7 @@ public class MainActivity extends AppCompatActivity {
                                         preferences.setDataLogin(MainActivity.this, false);
                                         startActivity(new Intent(MainActivity.this, AcceuilActivity.class));
                                     }
-
-
                                 }
-
                             } else {
                                 Toast.makeText(MainActivity.this, "Password incorrect!", Toast.LENGTH_SHORT).show();
                             }
