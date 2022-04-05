@@ -9,48 +9,51 @@
     tools:context=".jurynavbar"
     android:background="@drawable/bg"
     >
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:layout_centerHorizontal="true"
         android:id="@+id/lo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/item2">
 
 
         <ImageView
-            android:layout_marginTop="50dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginRight="30dp"
             android:layout_marginLeft="15dp"
-            android:src="@drawable/robot"
-            android:background="@drawable/circle"/>
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/robot" />
+
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/lo"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/circle"
             android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            />
+            android:background="@drawable/circle"
+            android:src="@drawable/lo" />
+
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginTop="50dp"
             android:layout_marginLeft="30dp"
-            android:src="@drawable/robot2"
-            android:background="@drawable/circle"/>
+            android:layout_marginTop="50dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/robot2" />
 
     </LinearLayout>
+
     <FrameLayout
-        android:layout_marginTop="9dp"
-        android:layout_below="@id/lo"
+
         android:id="@+id/bc"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/navbar"
+        android:layout_below="@id/lo"
         android:layout_marginBottom="10dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
