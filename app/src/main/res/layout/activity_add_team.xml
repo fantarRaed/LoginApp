@@ -4,21 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".addTeam">
+    tools:context=".addTeam"
+    android:background="@drawable/bg">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical">
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/lo" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ajouter une équipe"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/item4"
+
+           android:textColor="@color/white" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -144,11 +158,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/item"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/loginbac"
             android:clickable="true"
             android:onClick="addTeam"
-            android:text="Enregistrer" />
+            android:text="Enregistrer"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
