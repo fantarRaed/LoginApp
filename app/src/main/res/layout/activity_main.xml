@@ -185,21 +185,22 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="15dp"
-            android:src="@drawable/fb2" />
+            android:src="@drawable/fb2"
+            android:onClick="fbClick"/>
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="15dp"
-
-            android:src="@drawable/insta2" />
+            android:src="@drawable/insta2"
+            android:onClick="instaClick"/>
 
         <ImageView
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_margin="15dp"
-
-            android:src="@drawable/lin" />
+            android:src="@drawable/lin"
+            android:onClick="linkedinClick"/>
     </LinearLayout>
 
     <LinearLayout
