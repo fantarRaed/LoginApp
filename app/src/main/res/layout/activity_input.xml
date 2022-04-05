@@ -8,7 +8,21 @@
     tools:context=".homologation.InputActivity"
     android:background="@drawable/bg">
 
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/lo"
+        android:background="@drawable/circle"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+
     <TextView
+        android:layout_below="@+id/logo"
         android:id="@+id/title_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +30,8 @@
         android:text="Homologation"
         android:textAlignment="center"
         android:textSize="40dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="@drawable/item2"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -143,7 +158,7 @@
                 android:text="obtenir le score "
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:background="@drawable/button_login"
+                android:background="@drawable/loginbac"
                 android:textSize="23dp" />
 
             <TextView
@@ -164,7 +179,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/item"
+            android:background="@drawable/loginbac"
             android:paddingHorizontal="40dp"
             android:paddingVertical="20dp"
             android:layout_marginTop="20dp"

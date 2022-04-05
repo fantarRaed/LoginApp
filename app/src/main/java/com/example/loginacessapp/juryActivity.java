@@ -42,7 +42,7 @@ public class juryActivity extends AppCompatActivity {
         String data = intent.getStringExtra(qrscanner1.DATA);
 
         team_id=findViewById(R.id.team_id);
-        team_name=findViewById(R.id.team_name);
+
 
         System.out.println("old data is "+data);
         team_id.setText(data);
