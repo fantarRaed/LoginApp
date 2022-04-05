@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:background="@drawable/bg"
@@ -168,49 +168,59 @@
         android:textColor="@color/g"
         android:textSize="20dp"
         android:textStyle="bold" />
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_alignParentBottom="true"
-      android:gravity="center"
-      android:layout_margin="0dp">
-      <ImageView
-          android:layout_width="48dp"
-          android:layout_margin="15dp"
-          android:layout_height="48dp"
-          android:src="@drawable/fb2"
-          />
-      <ImageView
-          android:layout_width="50dp"
-          android:layout_height="50dp"
-          android:layout_margin="15dp"
 
-          android:src="@drawable/insta2"
-          />
-      <ImageView
-          android:layout_width="55dp"
-          android:layout_height="55dp"
-          android:layout_margin="15dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
 
-          android:src="@drawable/lin"
-          />
-  </LinearLayout>
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+        android:background="@drawable/item3"
+        android:gravity="center">
 
-      android:gravity="left"
-      android:layout_margin="60dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/fb2" />
 
-      <ImageView
-          android:layout_width="70dp"
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
 
-          android:layout_marginTop="70dp"
+            android:src="@drawable/insta2" />
 
-          android:layout_height="70dp"
-          android:src="@drawable/robot"
-          />
-  </LinearLayout>
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="15dp"
+
+            android:src="@drawable/lin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="left">
+
+        <ImageView
+            android:layout_width="70dp"
+
+            android:layout_height="70dp"
+
+            android:layout_marginTop="70dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/robot" />
+    </LinearLayout>
 
   <LinearLayout
       android:layout_width="match_parent"
@@ -225,65 +235,59 @@
           android:layout_margin="10dp"
           android:layout_height="70dp"
           android:src="@drawable/robot2"
+          android:background="@drawable/circle"
           />
   </LinearLayout>
 
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_margin="0dp"
-      android:gravity="center">
-      <ImageView
-          android:layout_width="100dp"
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+       android:layout_marginTop="9dp"
+        android:background="@drawable/circle">
 
-          android:layout_height="160dp"
-          android:src="@drawable/are"
-          />
-  </LinearLayout>
-  <LinearLayout
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/are" />
+    </LinearLayout>
+
+    <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_marginTop="160dp"
+      android:layout_marginTop="180dp"
       android:layout_marginRight="137dp"
       android:layout_marginLeft="137dp">
 
 
 
       <ImageView
-          android:layout_width="140dp"
+          android:layout_width="120dp"
 
-          android:layout_height="140dp"
+          android:layout_height="110dp"
           android:src="@drawable/aren"
+          android:background="@drawable/circle"
           />
   </LinearLayout>
 
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-
-      android:gravity="center"
-      android:layout_margin="0dp"/>
 
     <ImageView
         android:layout_width="65dp"
         android:layout_height="70dp"
-
         android:layout_below="@id/login"
-        android:layout_marginLeft="172dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="75dp"
-        android:layout_marginRight="0dp"
 
         android:layout_marginBottom="19dp"
-        android:src="@drawable/robot5" />
+        android:src="@drawable/robot5"
+        />
 
 
 
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
 
-      android:gravity="center"
-      android:layout_margin="0dp"/>
 
   <ImageView
       android:layout_width="180dp"
@@ -298,12 +302,7 @@
       android:src="@drawable/line"
 
       />
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
 
-      android:gravity="center"
-      android:layout_margin="0dp"/>
   <ImageView
       android:layout_below="@id/login"
       android:layout_width="180dp"
