@@ -14,7 +14,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="64dp"
             android:layout_gravity="center_horizontal"
             android:text="Concours  Autonome"
             android:textAlignment="center"

@@ -10,16 +10,18 @@
  >
 
     <TextView
+        android:id="@+id/signin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signin"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="140dp"
+        android:gravity="center"
         android:text="Sign in"
         android:textColor="@color/g"
         android:textSize="35dp"
-        android:textStyle="bold"
-        android:layout_margin="140dp"
-        android:gravity="center"
-        />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/username"
@@ -163,7 +165,7 @@
         android:layout_below="@id/login"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
         android:text="Contact Us"
@@ -173,9 +175,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-android:layout_below="@id/login"        android:layout_alignParentBottom="true"
-android:layout_marginTop="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:background="@drawable/item3"
         android:gravity="center">
 
@@ -248,31 +249,12 @@ android:layout_marginTop="170dp"
         android:src="@drawable/lo" />
 
 
-    <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="180dp"
-      android:layout_marginRight="137dp"
-      android:layout_marginLeft="137dp">
-
-
-
-      <ImageView
-          android:layout_width="120dp"
-
-          android:layout_height="110dp"
-          android:src="@drawable/aren"
-          android:background="@drawable/circle"
-          />
-  </LinearLayout>
-
-
     <ImageView
         android:layout_width="65dp"
         android:layout_height="70dp"
         android:layout_below="@id/login"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="95dp"
 
         android:layout_marginBottom="19dp"
         android:src="@drawable/robot5" />
@@ -284,7 +266,7 @@ android:layout_marginTop="170dp"
 
         android:layout_below="@id/login"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="140dp"
         android:layout_marginRight="220dp"
 
         android:layout_marginBottom="19dp"
@@ -292,18 +274,18 @@ android:layout_marginTop="170dp"
 
         />
 
-  <ImageView
-      android:layout_below="@id/login"
-      android:layout_width="180dp"
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="70dp"
 
-      android:layout_marginTop="120dp"
-      android:layout_marginLeft="220dp"
-      android:layout_marginRight="12dp"
-      android:layout_marginBottom="19dp"
-      android:layout_height="70dp"
-      android:src="@drawable/line"
+        android:layout_below="@id/login"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="19dp"
+        android:src="@drawable/line"
 
-      />
+        />
 
 
 </RelativeLayout>
