@@ -31,11 +31,11 @@
         <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/drawable/item4.xml" value="0.133" />
         <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/drawable/item5.xml" value="0.202" />
         <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/activity_acceuil.xml" value="0.22" />
-        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/activity_add_team.xml" value="0.17777777777777778" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/activity_add_team.xml" value="0.22" />
         <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/activity_add_user.xml" value="0.22" />
         <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/activity_admin.xml" value="0.22" />
         <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/activity_autonome.xml" value="0.184375" />
-        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/activity_input.xml" value="0.2" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/activity_input.xml" value="0.22" />
         <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/activity_junior.xml" value="0.184375" />
         <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/activity_jurynavbar.xml" value="0.25" />
         <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
@@ -59,6 +59,7 @@
         <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/fragment_tterrainrec.xml" value="0.22" />
         <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/jury.xml" value="0.25" />
         <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/jury_item.xml" value="0.1638888888888889" />
+        <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/layout/rec.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/iheb/AndroidStudioProjects/LoginAcessApp/app/src/main/res/menu/imenu1.xml" value="0.184375" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/drawable/btn_scan.xml" value="0.188" />
         <entry key="..\:/Users/ilyes/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_acceuil.xml" value="0.1796875" />

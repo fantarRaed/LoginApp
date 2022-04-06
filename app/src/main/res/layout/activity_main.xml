@@ -141,17 +141,19 @@
 
          -->
 
- <Switch
-     android:id="@+id/active"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:layout_below="@id/login"
-     android:layout_margin="20dp"
-     android:gravity="end"
-     android:text="Remember me"
-     android:textSize="20dp"
-     android:textStyle="bold"
-     />
+    <Switch
+        android:id="@+id/active"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="end"
+        android:text="Remember me"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 
     <TextView
@@ -171,13 +173,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp"
-
+        android:layout_height="match_parent"
+android:layout_below="@id/login"        android:layout_alignParentBottom="true"
+android:layout_marginTop="170dp"
         android:background="@drawable/item3"
         android:gravity="center">
 
@@ -185,22 +183,22 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="15dp"
-            android:src="@drawable/fb2"
-            android:onClick="fbClick"/>
+            android:onClick="fbClick"
+            android:src="@drawable/fb2" />
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="15dp"
-            android:src="@drawable/insta2"
-            android:onClick="instaClick"/>
+            android:onClick="instaClick"
+            android:src="@drawable/insta2" />
 
         <ImageView
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_margin="15dp"
-            android:src="@drawable/lin"
-            android:onClick="linkedinClick"/>
+            android:onClick="linkedinClick"
+            android:src="@drawable/lin" />
     </LinearLayout>
 
     <LinearLayout
@@ -240,21 +238,15 @@
           />
   </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_centerHorizontal="true"
-       android:layout_marginTop="9dp"
-        android:background="@drawable/circle">
 
-        <ImageView
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="15dp"
-            android:src="@drawable/are" />
-    </LinearLayout>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/circle"
+        android:src="@drawable/lo" />
+
 
     <LinearLayout
       android:layout_width="match_parent"
@@ -283,26 +275,22 @@
         android:layout_marginTop="75dp"
 
         android:layout_marginBottom="19dp"
-        android:src="@drawable/robot5"
+        android:src="@drawable/robot5" />
+
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+
+        android:layout_below="@id/login"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="220dp"
+
+        android:layout_marginBottom="19dp"
+        android:src="@drawable/line"
+
         />
-
-
-
-
-
-  <ImageView
-      android:layout_width="180dp"
-      android:layout_height="70dp"
-
-      android:layout_below="@id/login"
-      android:layout_marginLeft="12dp"
-      android:layout_marginTop="120dp"
-      android:layout_marginRight="220dp"
-
-      android:layout_marginBottom="19dp"
-      android:src="@drawable/line"
-
-      />
 
   <ImageView
       android:layout_below="@id/login"
