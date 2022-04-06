@@ -15,7 +15,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="65sp"
+            android:layout_height="60sp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="5dp"
             android:background="@drawable/item5"
