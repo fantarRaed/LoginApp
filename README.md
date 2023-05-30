@@ -4,5 +4,4 @@ du RoboCup, l'évènement phare de l'Association Robotique ENSI.
 
 # Demo video
 
-https://user-images.githubusercontent.com/99857162/230700653-da4ee83e-cca5-4575-88bc-7ea1a2b76372.mp4
-
+https://github.com/fantarRaed/RobocApp/assets/94232743/ef93cd6b-e79f-4dd2-b4e0-c0ceb970e3e0
